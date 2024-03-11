@@ -1,0 +1,111 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background: #ffffff; /* White background */
+    overflow: hidden;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    background-color: #ffffff; /* White background */
+    border-radius: 5px;
+    color: #000000; /* Black text */
+}
+
+.header {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+    position: fixed;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h3 {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    color: #000000; /* Black text */
+}
+
+.showAll {
+    display: flex;
+    margin-top: 20px;
+}
+
+.transactions {
+    background-color: #ffffff; /* White background */
+    border-radius: 15px;
+    width: fit-content;
+    height: 40vh;
+    overflow-y: auto;
+    margin: 10px;
+    border: 5px solid #ffffff; /* White border */
+}
+
+.transactions::-webkit-scrollbar {
+    width: 12px;
+}
+
+.transactions::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* White scrollbar thumb */
+    border-radius: 6px;
+}
+
+.transactions::-webkit-scrollbar-track {
+    background-color: #ffffff; /* White scrollbar track */
+}
+
+.transactions span {
+    display: flex;
+    overflow: hidden;
+    padding: 3px;
+    color: #000000; /* Black text */
+}
+
+.transactions i {
+    margin-left: 3px;
+}
+
+button {
+    background: #ffffff; /* White background */
+    color: #000000; /* Black text */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input {
+    background: #ffffff; /* White background */
+    color: #000000; /* Black text */
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: 2px solid #000000; /* Black border color */
+    box-shadow: 0 0 10px #000000; /* Black box shadow */
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.8); /* Black placeholder text */
+}
+
+#showAllTransactions {
+    background: #ffffff; /* White background */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width: 680px) {
+    .transactions {
+        width: 90vw;
+        height: 30vh;
+    }
+}

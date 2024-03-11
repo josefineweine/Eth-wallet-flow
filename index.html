@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap">
+
+
+    <script src="/scripts/app.js" defer type="module"></script>
+    <script src="https://kit.fontawesome.com/8c45213dd6.js" crossorigin="anonymous"></script>
+    
+
+    <title>EtherFlow</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>EtherFlow</h1>
+    </header>
+    
+    <section class="container">
+    
+        <div class="formContainer">
+            <i class="fa-brands fa-ethereum"></i>
+            <h3>What's inside of your wallet?</h3>
+            <form action="">
+                <input id="getBalance" type="text" placeholder="0xAbCdEf1234567890GhIjKlMnOpQrStUvWxYz">
+                <button id="balanceButton">Check Balance</button>
+            </form>
+
+            <div>
+                <span id="walletBalance"></span>
+            </div>
+
+            <form action="">
+                <input id="amount" type="text" placeholder="Enter Amount to send">
+            </form>
+
+            <form action="">
+                <input id="toWallet" type="text" placeholder="0xAbCdEf1234567890GhIjKlMnOpQrStUvWxYz">
+                <button type="submit" id="sendTrxButton">Send Transaction</button>
+            </form>
+
+        </div>
+        <div class="formContainer showAll" >
+            <form action="">
+                <input id="showAllTransactions" type="text" placeholder="Enter a wallet adress">
+                <button type="submit" id="showEverythingButton">Show Everything</button>
+            </form>
+
+        </div>
+        <div id="containerTransactions" class="containerTransactions">
+
+        </div>
+    </section>
+</body>
+
+</html>
