@@ -1,27 +1,29 @@
 class HttpClient {
-    constructor(api) {
-        this.apiKey = this.apiKey;
-        this.apiUrl = 'https://api-sepolia.etherscan.io/api'
+    constructor(apiKey) {
+        this.apiKey = apiKey;
+        this.apiUrl = 'https://api-sepolia.etherscan.io/api';
     }
 
     async getTransactions(address) {
-        const apiUrl = `${this.apiUrl}?module=account&action=txlist&address=${address}&apikey=${this.apiKey}`;
-
         try {
-            const response = await fetch(apiUrl)
+            if (!address) {
+                throw new Error('No address provided');
+            }
+
+            const apiUrl = `${this.apiUrl}?module=account&action=txlist&address=${address}&apikey=${this.apiKey}`;
+            const response = await fetch(apiUrl);
             const data = await response.json();
 
             if (data.status === '1') {
-                return data.result
+                return data.result;
             } else {
-                console.error('Error fetching transactions:', data.message)
-                return [];
+                throw new Error(`Error fetching transactions: ${data.message}`);
             }
         } catch (error) {
-            console.error('Error fetching transactions:', error)
-            return []
+            console.error('Error fetching transactions:', error.message);
+            return [];
         }
-
     }
-}   
-export default HttpClient
+}
+
+export default HttpClient;

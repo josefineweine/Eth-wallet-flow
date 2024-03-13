@@ -4,7 +4,7 @@
     justify-content: center;
     height: 100vh;
     flex-direction: column;
-    background: #ffffff; /* White background */
+    background: #ffffff; 
     overflow: hidden;
 }
 
@@ -13,14 +13,14 @@
     flex-direction: column;
     gap: 20px;
     padding: 30px;
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff; 
     border-radius: 5px;
-    color: #000000; /* Black text */
+    color: #000000; 
 }
 
 .header {
-    background-color: #ffffff; /* White background */
-    color: #000000; /* Black text */
+    background-color: #ffffff; 
+    color: #000000; 
     position: fixed;
     cursor: pointer;
     width: 100%;
@@ -31,7 +31,7 @@ h1, h3 {
     display: flex;
     align-self: center;
     justify-content: center;
-    color: #000000; /* Black text */
+    color: #000000; 
 }
 
 .showAll {
@@ -40,13 +40,13 @@ h1, h3 {
 }
 
 .transactions {
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff; 
     border-radius: 15px;
     width: fit-content;
     height: 40vh;
     overflow-y: auto;
     margin: 10px;
-    border: 5px solid #ffffff; /* White border */
+    border: 5px solid #ffffff; 
 }
 
 .transactions::-webkit-scrollbar {
@@ -54,19 +54,19 @@ h1, h3 {
 }
 
 .transactions::-webkit-scrollbar-thumb {
-    background-color: #ffffff; /* White scrollbar thumb */
+    background-color: #ffffff; 
     border-radius: 6px;
 }
 
 .transactions::-webkit-scrollbar-track {
-    background-color: #ffffff; /* White scrollbar track */
+    background-color: #ffffff; 
 }
 
 .transactions span {
     display: flex;
     overflow: hidden;
     padding: 3px;
-    color: #000000; /* Black text */
+    color: #000000; 
 }
 
 .transactions i {
@@ -74,29 +74,29 @@ h1, h3 {
 }
 
 button {
-    background: #ffffff; /* White background */
-    color: #000000; /* Black text */
+    background: #ffffff; 
+    color: #000000; 
     border-radius: 5px;
     cursor: pointer;
 }
 
 input {
-    background: #ffffff; /* White background */
-    color: #000000; /* Black text */
+    background: #ffffff; 
+    color: #000000; 
     border-radius: 5px;
 }
 
 input:focus {
-    border-color: 2px solid #000000; /* Black border color */
-    box-shadow: 0 0 10px #000000; /* Black box shadow */
+    border-color: 2px solid #000000; 
+    box-shadow: 0 0 10px #000000; 
 }
 
 input::placeholder {
-    color: rgba(0, 0, 0, 0.8); /* Black placeholder text */
+    color: rgba(0, 0, 0, 0.8); 
 }
 
 #showAllTransactions {
-    background: #ffffff; /* White background */
+    background: #ffffff;
 }
 
 body {
